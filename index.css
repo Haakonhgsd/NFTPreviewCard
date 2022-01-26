@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.mainCard
+{
+    height: 55vh;
+    width: 18vw;
+    background-color: hsl(216, 50%, 16%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+.topHalf
+{
+    border-radius: 1vh;
+    height: 30vh;
+    width: 16vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 2vh;
+}
+
+.hoverTop
+{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    display: flex;
+    border-radius: 1vh;
+}
+
+.viewImage
+{
+    display: flex;
+    margin-left: 7vw;
+    margin-top: 13vh;
+    opacity: 1;
+}
+
+.hoverTop:hover
+{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.383);
+    opacity: 1;
+    border-radius: 1vh;
+}
+
+.imageEquili
+{
+    background-image: url("./images/image-equilibrium.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh;    
+}
+
+.bottomHalf
+{
+    border-radius: 1vh;
+    height: 22vh;
+    width: 16vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+}
+
+.topText
+{
+    margin-top: 1vh;
+    margin-left: 1vh;
+    color: hsl(0, 0%, 100%);
+}
+
+.topText:hover
+{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+
+}
+.underText
+{
+    margin-top: 1vh;
+    margin-left: 1vh;
+    color: hsl(215, 51%, 70%);
+}
+
+.infoBox
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    justify-content: space-between;
+}
+
+.ethBox, .timeLeftBox
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.timeLeftBox
+{
+    margin-right: 1vh;
+}
+
+.textDays
+{
+    margin-left: 0.5vw;
+    color: hsl(215, 51%, 70%);
+}
+
+.ethBox
+{
+    margin-left: 1vh;
+}
+.textETH
+{
+    margin-left: 0.5vw;
+    color: hsl(178, 100%, 50%);
+}
+
+.line
+{
+    width: 14vw;
+    height: 0.2vh;
+    background-color: hsl(215, 32%, 27%);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 2.2vh;
+}
+
+.bottomBox
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.avatarImage
+{
+    width: 10%;
+    height: 10%;
+    margin-left: 1vh;
+    border: 1px white solid;
+    border-radius: 100%;
+    margin-top: 1vh;
+}
+
+.creationText
+{
+    margin-left: 1vw;
+    margin-top: 2vh;
+    color: hsl(215, 51%, 70%);
+}
+
+.nameText
+{
+    color: white;
+}
+
+.nameText:hover
+{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 600px) 
+{
+    body 
+    {
+        background-color: lightgreen;
+    }
+    .mainCard
+    {
+        height: 55vh;
+        width: 80%;
+        background-color: hsl(216, 50%, 16%);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .topHalf
+    {
+        border-radius: 1vh;
+        height: 30vh;
+        width: 90%;
+        margin-left: 4vw;
+        margin-top: 2vh;
+    }
+    .bottomHalf
+    {
+        border-radius: 1vh;
+        height: 22vh;
+        width: 90%;
+        margin-left: 4vw;
+        margin-right: 1vw;
+        margin-bottom: 2vh;
+    }
+    .line
+    {
+        width: 100%;
+        height: 0.2vh;
+        background-color: hsl(215, 32%, 27%);
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 2.2vh;
+    }
+}
