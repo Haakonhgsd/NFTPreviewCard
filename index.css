@@ -187,10 +187,6 @@ body
 
 @media screen and (max-width: 600px) 
 {
-    body 
-    {
-        background-color: lightgreen;
-    }
     .mainCard
     {
         height: 55vh;
@@ -229,5 +225,18 @@ body
         margin-left: 1vw;
         margin-right: 1vw;
         margin-top: 2.2vh;
+    }
+    .creationText
+    {
+        margin-left: 5%;
+        margin-top: 2vh;
+        color: hsl(215, 51%, 70%);
+    }
+    .viewImage
+    {
+        display: flex;
+        margin-left: 40%;
+        margin-top: 40%;
+        opacity: 1;
     }
 }
