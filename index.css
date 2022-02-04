@@ -43,20 +43,20 @@ body
     height: 100%;
     background-color: hsl(178, 100%, 50%);
     opacity: 0;
-    display: flex;
+    display: flex; 
     border-radius: 1vh;
 }
 
 .viewImage
 {
-    display: flex;
-    margin-left: 7vw;
-    margin-top: 13vh;
     opacity: 1;
 }
 
 .hoverTop:hover
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 100%;
     height: 100%;
@@ -185,11 +185,15 @@ body
     color: hsl(178, 100%, 50%);
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 375px) 
 {
+    body 
+    {
+        background-color: lightgreen;
+    }
     .mainCard
     {
-        height: 60vh;
+        height: 62vh;
         width: 80%;
         background-color: hsl(216, 50%, 16%);
         position: fixed;
@@ -226,17 +230,8 @@ body
         margin-right: 1vw;
         margin-top: 2.2vh;
     }
-    .creationText
+    .bottomBox
     {
-        margin-left: 5%;
-        margin-top: 2vh;
-        color: hsl(215, 51%, 70%);
-    }
-    .viewImage
-    {
-        display: flex;
-        margin-left: 40%;
-        margin-top: 40%;
-        opacity: 1;
+        margin-top: 1.5vh;
     }
 }
